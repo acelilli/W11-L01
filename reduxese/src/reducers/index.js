@@ -2,7 +2,9 @@
 import { FETCH_DATA_REQUEST, FETCH_DATA_SUCCESS, FETCH_DATA_FAILURE } from "../actions/index";
 
 const initialState = {
-  data: [],
+  data: {
+    jobs: [],
+  },
   loading: false,
   error: null,
   query: "",
