@@ -25,13 +25,24 @@ import MainSearch from "./components/MainSearch";
 //   );
 // }
 //diventa:
-ReactDOM.render(
-  //ReactDom.Render -> Renderizza l'applicazione nel doc associato all'ID root
-  // Provider -> avvolge tutto, quindi garantisce a tutti i figli l'accesso allo store
-  <Provider store={store}>
-    <MainSearch />
-  </Provider>,
-  document.getElementById("root")
-);
+// ReactDOM.render(
+//   //ReactDom.Render -> Renderizza l'applicazione nel doc associato all'ID root
+//   // Provider -> avvolge tutto, quindi garantisce a tutti i figli l'accesso allo store
+//   <Provider store={store}>
+//     <MainSearch />
+//   </Provider>,
+//   document.getElementById("root")
+// );
+
+function App() {
+  return (
+    (
+      <Provider store={store}>
+        <MainSearch />
+      </Provider>
+    ),
+    document.getElementById("root")
+  );
+}
 
 export default App;
